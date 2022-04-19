@@ -1,0 +1,226 @@
+@import "utilities/variables";
+
+body{
+    height: $alto-principal;
+}
+
+header{
+    .divTopMenu{
+        background-color: #9abab9;
+        padding: 5px;
+        margin-bottom: 5px;
+        top: 0;
+        z-index: 2;
+        text-align: center;
+        ul{
+            li{
+                display: inline-block;
+                margin: 5px;
+                text-transform: uppercase;
+                color: #4b5f5e;
+                font-family: 'Roboto', sans-serif;
+                font-size: 11px;
+                font-weight: 700;
+                    
+                }
+            }
+
+        }
+
+        
+    }
+    .divMenu{    
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 10px;
+        h1{
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #4b5f5e;
+            font-size: 30px;
+            padding: 2px;
+            margin: 2px;
+        }
+        .menu{
+            justify-content: space-around;
+
+            ul{
+                display: flex;
+                justify-content: center;
+                list-style: none; 
+                li a{
+                    display: inline-block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif;
+                    color: #718b8b;
+                    font-size: 14px;
+                    padding: 10px; 
+                    margin: 10;
+                    &:hover{
+                        background-color: whitesmoke;
+                        transform: scale(1.2);
+                    }
+                            
+                }       
+            }
+        }
+    }
+
+
+.mainHome{
+    display: grid;
+    grid-template-areas: "mainHome";
+    justify-content:center;
+    grid-area: mainHome;
+    img{
+        width: 100%;
+        overflow: auto;
+    }
+}
+
+.row{
+    background-color: antiquewhite;
+    justify-content: center;
+    .card-center{
+        .card-body{
+            .card-title{
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;     
+            }
+        .card-text{
+            display: none;
+            }  
+        .btn-primary{
+            background-color: $color-principal;
+            border-color: $color-principal;
+        }  
+        }
+    }
+        img{
+            padding: 10px;
+            margin: 5px;
+        }    
+}
+
+.mainContacto{
+    display: grid;
+    grid-template-areas: "divLabelNombre"
+                         "divLabelTelefono"
+                         "divLabelEmail"
+                         "divLabelPais"
+                         "divLabelMensaje"
+                         "divLabelBoton";
+    justify-content: left;
+    background-color: antiquewhite;
+        form{
+            .form{
+                fieldset{
+                    legend{
+                        font-weight: 700;
+                    }
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 20px;
+                        padding: 20px;
+                        margin: 20px;
+                            .divLabelNombre{
+                                grid-area: divLabelNombre;
+                            }
+                            .divLabelTelefono{
+                                grid-area: divLabelTelefono;
+                            }
+                            .divLabelEmail{
+                                grid-area: divLabelEmail;
+                            }    
+                            .divLabelPais{
+                                    grid-area: divLabelPais;
+                            }
+                            .divLabelMensaje{
+                                grid-area: divLabelMensaje;
+                            input{
+                                padding: 40px;
+                            }
+                            }
+                            .divLabelBoton{
+                                grid-area: divLabelBoton;
+                            }
+                            .divLabelNombre, .divLabelTelefono, .divLabelEmail, .divLabelPais, .divLabelMensaje, .divLabelBoton{
+                                        font-weight: 700;
+                                        padding: 5px;
+                                        margin: 20px 0px 20px 0px;
+                                    } 
+                        }
+                }
+            }
+        }
+.mainHistoria{
+    display: grid;
+    grid-template-areas: "parrafo1"
+                         "parrafo2";
+    justify-content: center;
+    font-family:'Roboto', sans-serif;
+    font-size: 13px;
+    background-color: antiquewhite;
+    .parrafo1{
+        grid-area: parrafo1;
+    }
+    
+    .parrafo2{
+        grid-area: parrafo2;
+    }
+    
+    .parrafo1, .parrafo2{
+        padding: 8px;
+        margin: 8px;
+        text-align: center;
+    }
+}
+footer{
+    .divFooter{
+        text-align: center;
+            p{
+                color: #7e9a99;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 12px;
+                font-weight: bold;
+                display: inline-block;
+                padding: 50px;
+            }
+        }
+    .divWhatsapp{
+        grid-area: divWhatsapp;
+            img{
+                position: fixed;
+                bottom: 2px;
+                right: 2px;
+                height: 50px;
+                width: 50px;
+            }
+    }
+}
+
+.giftcard{
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    padding: 10px;
+        img{
+            width: 50%;
+            overflow: auto;
+            padding: 10px;
+            }
+          p{
+            width: 50%;
+            padding: 10px;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: $color-principal;
+        
+          }  
+}
