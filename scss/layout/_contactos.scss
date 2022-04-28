@@ -1,0 +1,64 @@
+@import "../utilities/variables";
+
+.mainContacto{
+    display: grid;
+    grid-template-areas: "divLabelNombre"
+                         "divLabelTelefono"
+                         "divLabelEmail"
+                         "divLabelPais"
+                         "divLabelMensaje"
+                         "divLabelBoton";
+    justify-content: center;
+    background-color: $color-fondo;
+        form{
+            .form{
+                fieldset{
+                    legend{
+                        font-weight: 700;
+                    }
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 10px;
+                        padding: 10px;
+                        margin: 10px;
+                        
+                            .divLabelNombre{
+                                grid-area: divLabelNombre;
+                            }
+                            .divLabelTelefono{
+                                grid-area: divLabelTelefono;
+                            }
+                            .divLabelEmail{
+                                grid-area: divLabelEmail;
+                            }    
+                            .divLabelPais{
+                                    grid-area: divLabelPais;
+                            }
+                            .divLabelMensaje{
+                                grid-area: divLabelMensaje;
+                            input{
+                                padding: 40px;
+                            }
+                            }
+                            .divLabelBoton{
+                                grid-area: divLabelBoton;
+                            }
+                            .divLabelNombre, .divLabelTelefono, .divLabelEmail, .divLabelPais, .divLabelMensaje, .divLabelBoton{
+                                        font-weight: 700;
+                                        padding: 5px;
+                                        margin: 10px 0px 10px 0px;
+                                    } 
+                        }
+                }
+            }
+        }
+@media only screen and (min-width:1024px){
+    .mainContacto form .form fieldset{
+        font-size: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+}
+
+
+

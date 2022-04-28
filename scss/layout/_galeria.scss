@@ -1,0 +1,25 @@
+@import "../utilities/variables";
+
+.row{
+    background-color: antiquewhite;
+    justify-content: center;
+    .card-center{
+        .card-body{
+            .card-title{
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;     
+            }
+        .card-text{
+            display: none;
+            }  
+        .btn-primary{
+            background-color: $color-principal;
+            border-color: $color-principal;
+        }  
+        }
+    }
+        img{
+            padding: 10px;
+            margin: 5px;
+        }    
+}

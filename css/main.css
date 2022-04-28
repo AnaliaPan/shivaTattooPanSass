@@ -1,103 +1,13 @@
-/*reset css*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-  height: 100vh; }
-
-header .divTopMenu {
-  background-color: #9abab9;
-  padding: 5px;
-  margin-bottom: 5px;
-  top: 0;
-  z-index: 2;
-  text-align: center; }
-  header .divTopMenu ul li {
-    display: inline-block;
-    margin: 5px;
-    text-transform: uppercase;
-    color: #4b5f5e;
-    font-family: 'Roboto', sans-serif;
-    font-size: 11px;
-    font-weight: 700; }
-
-.divMenu {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  margin: 10px; }
-  .divMenu h1 {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #4b5f5e;
-    font-size: 30px;
-    padding: 2px;
-    margin: 2px; }
-  .divMenu .menu {
-    justify-content: space-around; }
-    .divMenu .menu ul {
-      display: flex;
-      justify-content: center;
-      list-style: none; }
-      .divMenu .menu ul li a {
-        display: inline-block;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: 'Roboto', sans-serif;
-        color: #718b8b;
-        font-size: 14px;
-        padding: 10px;
-        margin: 10; }
-        .divMenu .menu ul li a:hover {
-          background-color: whitesmoke;
-          transform: scale(1.2); }
-
-.mainHome {
-  display: grid;
-  grid-template-areas: "mainHome";
-  justify-content: center;
-  grid-area: mainHome; }
-  .mainHome img {
-    width: 100%;
-    overflow: auto; }
-
-.row {
-  background-color: antiquewhite;
-  justify-content: center; }
-  .row .card-center .card-body .card-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px; }
-  .row .card-center .card-body .card-text {
-    display: none; }
-  .row .card-center .card-body .btn-primary {
-    background-color: #9abab9;
-    border-color: #9abab9; }
-  .row img {
-    padding: 10px;
-    margin: 5px; }
-
 .mainContacto {
   display: grid;
-  grid-template-areas: "divLabelNombre"
- "divLabelTelefono"
- "divLabelEmail"
- "divLabelPais"
- "divLabelMensaje"
- "divLabelBoton";
-  justify-content: left;
+  grid-template-areas: "divLabelNombre" "divLabelTelefono" "divLabelEmail" "divLabelPais" "divLabelMensaje" "divLabelBoton";
+  justify-content: center;
   background-color: antiquewhite; }
   .mainContacto form .form fieldset {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding: 20px;
-    margin: 20px; }
+    font-size: 10px;
+    padding: 10px;
+    margin: 10px; }
     .mainContacto form .form fieldset legend {
       font-weight: 700; }
     .mainContacto form .form fieldset .divLabelNombre {
@@ -117,24 +27,143 @@ header .divTopMenu {
     .mainContacto form .form fieldset .divLabelNombre, .mainContacto form .form fieldset .divLabelTelefono, .mainContacto form .form fieldset .divLabelEmail, .mainContacto form .form fieldset .divLabelPais, .mainContacto form .form fieldset .divLabelMensaje, .mainContacto form .form fieldset .divLabelBoton {
       font-weight: 700;
       padding: 5px;
-      margin: 20px 0px 20px 0px; }
+      margin: 10px 0px 10px 0px; }
 
-.mainHistoria {
+@media only screen and (min-width: 1024px) {
+  .mainContacto form .form fieldset {
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px; } }
+
+.row {
+  background-color: antiquewhite;
+  justify-content: center; }
+  .row .card-center .card-body .card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px; }
+  .row .card-center .card-body .card-text {
+    display: none; }
+  .row .card-center .card-body .btn-primary {
+    background-color: #9abab9;
+    border-color: #9abab9; }
+
+body {
+  height: 100vh; }
+
+.giftcard {
+  display: flex;
+  align-items: center;
+  padding: 10px; }
+  .giftcard img {
+    width: 50%;
+    overflow: auto;
+    padding: 10px; }
+  .giftcard p {
+    width: 50%;
+    padding: 10px;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #4b5f5e; }
+
+@media only screen and (min-width: 600px) {
+  .giftcard p {
+    font-size: 12px; } }
+
+@media only screen and (min-width: 1024px) {
+  .giftcard p {
+    font-size: 15px; } }
+
+.mainNosotros {
+  display: flex;
+  background-color: antiquewhite;
+  align-items: center;
+  padding: 10px; }
+  .mainNosotros .imagenNosotros {
+    width: 50%;
+    overflow: auto;
+    padding: 10px; }
+  .mainNosotros .parrafoNosotros {
+    width: 50%;
+    padding: 10px;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #4b5f5e; }
+
+@media only screen and (min-width: 600px) {
+  .mainNosotros .parrafoNosotros {
+    font-size: 12px; } }
+
+@media only screen and (min-width: 1024px) {
+  .mainNosotros .parrafoNosotros {
+    font-size: 15px; } }
+
+body {
+  height: 100vh; }
+
+header .divTopMenu {
+  background-color: #9abab9;
+  padding: 5px;
+  margin-bottom: 5px;
+  top: 0;
+  z-index: 2;
+  text-align: center; }
+  header .divTopMenu ul li {
+    display: inline-block;
+    margin: px;
+    text-transform: uppercase;
+    color: #4b5f5e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 700; }
+
+.divReservar, .divBook, .divGiftcard, .divInicio {
+  display: none; }
+
+.divMenu {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px; }
+  .divMenu h1 a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4b5f5e;
+    font-size: 12px;
+    padding: 2px;
+    margin: 2px; }
+  .divMenu .menu {
+    justify-content: space-around; }
+    .divMenu .menu ul {
+      display: flex;
+      justify-content: center;
+      list-style: none; }
+      .divMenu .menu ul li a {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        color: #718b8b;
+        font-size: 11px;
+        padding: 10px;
+        margin: 10px; }
+        .divMenu .menu ul li a:hover {
+          background-color: whitesmoke;
+          transform: scale(1.2); }
+
+.mainHome {
   display: grid;
-  grid-template-areas: "parrafo1"
- "parrafo2";
+  grid-template-areas: "mainHome mainHome";
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 13px;
-  background-color: antiquewhite; }
-  .mainHistoria .parrafo1 {
-    grid-area: parrafo1; }
-  .mainHistoria .parrafo2 {
-    grid-area: parrafo2; }
-  .mainHistoria .parrafo1, .mainHistoria .parrafo2 {
-    padding: 8px;
-    margin: 8px;
-    text-align: center; }
+  grid-area: mainHome; }
+  .mainHome img {
+    width: 100%;
+    overflow: auto; }
 
 footer .divFooter {
   text-align: center; }
@@ -155,19 +184,18 @@ footer .divWhatsapp {
     height: 50px;
     width: 50px; }
 
-.giftcard {
-  display: flex;
-  background-color: antiquewhite;
-  align-items: center;
-  padding: 10px; }
-  .giftcard img {
-    width: 50%;
-    overflow: auto;
-    padding: 10px; }
-  .giftcard p {
-    width: 50%;
-    padding: 10px;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: #9abab9; }
+@media only screen and (min-width: 600px) {
+  .divMenu h1 a {
+    font-size: 18px; }
+  .divBook, .divReservar, .divInicio {
+    display: flex; } }
+
+@media only screen and (min-width: 1024px) {
+  .divMenu h1 a {
+    font-size: 35px; }
+  .divGiftcard {
+    display: flex; }
+  header .divTopMenu ul li {
+    font-size: 15px; }
+  header .divMenu .menu ul li a {
+    font-size: 16px; } }
